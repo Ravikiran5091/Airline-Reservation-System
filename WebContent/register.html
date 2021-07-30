@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    a {
+  text-decoration: none;
+}
+label {
+  font-family: "Raleway", sans-serif;
+  font-size: 11pt;
+}
+#forgot-pass {
+  color: #2dbd6e;
+  font-family: "Raleway", sans-serif;
+  font-size: 10pt;
+  margin-top: 3px;
+  text-align: right;
+}
+#card {
+  background: solid black;
+  border-radius: 8px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.65);
+  height: 420px;
+  margin: 6rem auto 8.1rem auto;
+  width: 329px;
+}
+#card-content {
+  padding: 12px 44px;
+}
+#card-title {
+  font-family: "Raleway Thin", sans-serif;
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+}
+#signup {
+  color: #2dbd6e;
+  font-family: "Raleway", sans-serif;
+  font-size: 10pt;
+  margin-top: 16px;
+  text-align: center;
+}
+#submit-btn {
+  background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #24c64f;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  margin-top: 50px;
+  transition: 0.25s;
+  width: 153px;
+}
+#submit-btn:hover {
+  box-shadow: 0px 1px 18px #24c64f;
+}
+.form {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.form-border {
+  background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+  width: 100%;
+}
+.form-content {
+  background: #fbfbfb;
+  border: none;
+  outline: none;
+  padding-top: 14px;
+}
+.underline-title {
+  background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+  height: 2px;
+  margin: -1.1rem auto 0 auto;
+  width: 130px;
+}
+body {
+  position: sticky;
+  background-color: #909692;
+  height: 70%;
+  margin:0;
+  color: #2dbd6e;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+span {
+  font-size:44px;
+  content: "\2708";
+}
+.input-icons i {
+  margin-top: 2px;
+  margin-left: -36px;
+  position: absolute;
+}        
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}       
+.icon {
+  color:black;
+  padding: 10px;
+  min-width: 40px;
+}         
+.input-field {
+  width: 10%;
+  padding: 10px;
+  text-align: center;
+
+}
+input{
+  margin-right:-30px;
+  width:215px;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<br><br>
+<center>
+  <h1 style="letter-spacing: 5px;font-size: 50px;color: black;font-family:Garamond, serif;padding-left: 17px;">COOLFLIGHTS<span>&#9992;</span></h1>
+</center><br>
+  <div id="card" style="background-color:#33302d;margin-top: 5px;margin-bottom: 0px;">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>REGISTER</h2>
+        <div class="underline-title"></div>
+      </div>
+      <form method="post" class="form" action="RegistrationServlet" style="margin-top: 2px;">
+      <div style="max-width:400px;margin:auto">
+        <div class="input-icons">
+
+        <i style="font-size:24px;color:black;" class="fa">&#xf007;</i>
+        <input sytle="margin-right: 20px;" id="user-name" class="form-content" type="text" name="name" autocomplete="on" required />
+        <div class="form-border"></div><br>
+
+        <i style="font-size:20px;color:black;margin-top: 4px;" class="fa">&#xf0e0;</i>
+        <input id="user-email" class="form-content" type="email" name="email" autocomplete="on" required />
+        <div class="form-border"></div><br>
+
+        <i style="font-size:29px;color:black;margin-top: 1px;padding-left: 2px;" class="fa">&#xf10b;</i>
+        <input id="user-mobile" class="form-content" type="text" name="mobile" autocomplete="on" required />
+        <div class="form-border"></div><br>
+
+        <i style="font-size:24px;color:black;" class="fa">&#xf13e;</i>
+        <input id="user-password" class="form-content" type="password" name="password" required />
+        <div class="form-border"></div>
+
+        <input id="submit-btn" type="submit" class="submit-btn:hover" name="submit" value="REGISTER" style="background-color:#10c254;margin-left: 20px;margin-top: 25px;margin-right: 0px;"/><br><br>
+        <a href="login.html" style="margin-left: 20px;padding-top: 2px;" id="signup">Already have an account?</a>
+
+      </div>
+      </div>  
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

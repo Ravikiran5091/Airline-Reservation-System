@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dbd7d7;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 1080px;
+  padding: 0 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 80 -5px;margin-left:50px;margin-top:90px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 450px;
+    display: block;
+    margin-bottom: 0px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(8, 10, 10, 0.4);
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+h5{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <div class="row">
+          <div class="column" style="width:430px;">
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" name="muverName">
+          </div>
+      
+          <div class="column" style="width:430px;">
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" name="muverPhone">
+          </div>
+        </div><br>
+
+        <div class="row">
+          <div class="column" style="width:430px;">
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" name="muverName">
+          </div>
+          <div class="column" style="width:430px;">
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" name="muverPhone">
+          </div>
+        </div><br>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column" style="width:300px;">
+    <div class="card">
+      <h3 style="text-align: center">PAYMENT</h3>
+      <img style="width:100%;padding: -10px;margin:0px;" src="https://www.investopedia.com/thmb/K1rNR0LxxrnD1Dv0xXSy3qVad2k=/1500x844/smart/filters:no_upscale()/GettyImages-1154092756-e31f198466e443018b44a088ead1250b.jpg"><br>
+      <input type="text"style="height: 30px;" placeholder="No of Tickets "><br>
+      <input type="text"style="height: 30px;" class="form-control" placeholder="Coupons">
+      <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div><br>
+      <p>Cost 5000</p>
+      <p>Savings 540</p>
+      <hr>
+      <h5>Amount 4460</h5><br>
+      <button type="button" class="btn btn-success" style="width:100%;">Paynow</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
